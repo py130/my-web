@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pycmy的小窝</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="app">
+      <div id="list">
+        <p><img src="image/game.svg"><a href="https://pycmy.cn/FindYourSister">FindYourSister</a></p>
+        <p><img src="image/game.svg"><a href="https://pycmy.cn/HappyEliminate">HappyEliminate</a></p>
+        <p><img src="image/game.svg"><a href="https://pycmy.cn/JumpingGo">JumpingGo</a></p>
+        <p><img src="image/game.svg"><a href="https://pycmy.cn/Penguin_II">Penguin_II</a></p>
+        <p><img src="image/game.svg"><a href="https://pycmy.cn/WaterDropAttack">WaterDropAttack</a></p>
+      </div>
+  </div>
+  
+</body>
+</html>
+<style >
+  /* * {
+      margin:0;
+  } */
+  html,body {
+    height: 100%;
+    margin: 0;
+  }
+  #app {
+    height: 100%;
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    animation-name: my; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes my {
+    0% {
+      background-color: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    }
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  #list {
+    background-color: transparent;
+    position: absolute;
+    height: 500px;
+    width: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
+  #list img {
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+  }
+  #list p {
+    font-family: Lobster monospace ;
+    font-size: 30px;
+  }
+</style>
