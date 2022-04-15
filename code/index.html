@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>pycmy的小窝</title>
+  <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div id="app">
+      <div class="ui-header">
+        <div class="ui-title">
+          <p>培育草莓园</p>
+        </div>
+        <div class="ui-nav">
+          <p>HOME</p>
+          <p>GAME</p>
+          <p>PHOTO</p>
+        </div>
+      </div>
+      <div class="ui-main">
+        <div id="list">
+          <p><img src="image/game.svg"><a href="https://pycmy.cn/FindYourSister">FindYourSister</a></p>
+          <p><img src="image/game.svg"><a href="https://pycmy.cn/HappyEliminate">HappyEliminate</a></p>
+          <p><img src="image/game.svg"><a href="https://pycmy.cn/JumpingGo">JumpingGo</a></p>
+          <p><img src="image/game.svg"><a href="https://pycmy.cn/Penguin_II">Penguin_II</a></p>
+          <p><img src="image/game.svg"><a href="https://pycmy.cn/WaterDropAttack">WaterDropAttack</a></p>
+        </div>
+      </div>
+      
+  </div>
+  
+</body>
+</html>
+<style >
+  #app {
+    /* 让div撑满屏幕 */
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .ui-main {
+    /* div渐变色 */
+    background: linear-gradient(35deg, #CCFFFF, #FFCCCC);
+    animation-name: background-color; 
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes background-color {
+    100% {
+      filter: hue-rotate(360deg);
+    }
+  }
+  .ui-header {
+    display: flex;
+    /* width: 100%; */
+    background-color: hsl(0, 0%, 90%);
+    justify-content: space-between;
+  }
+  .ui-title {
+    flex: 0 2 40%;
+    display: flex;
+    justify-content: start;
+    font-size: 150%;
+  }
+  .ui-title p {
+    margin: 10px;
+    margin-left: 20px;
+  }
+  .ui-nav {
+    display: flex;
+    flex: 0 4 30%;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .ui-nav p{
+    margin-left: 20px;
+    margin-right: 20px
+  }
+  #list {
+    background-color: transparent;
+    /* position: absolute; */
+    height: 500px;
+    width: 300px;
+    /* top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0; */
+    /* margin: auto; */
+  }
+  #list img {
+    vertical-align: middle;
+  }
+  a {
+    text-decoration: none;
+  }
+  #list p {
+    font-family: Lobster monospace;
+    font-size: 30px;
+  }
+</style>
